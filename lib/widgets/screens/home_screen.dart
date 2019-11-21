@@ -1,18 +1,34 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_structure/widgets/screens/base_screen.dart';
 
-class HomeScreen extends StatefulWidget {
-  @override
-  _HomeScreenState createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
+// First screen of the application
+class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Home Screen'),
-      ),
-      body: Center(),
+    return BaseScreen(
+      title: 'Home Screen',
+      child: Column(children: <Widget>[
+        Expanded(
+          child: Center(
+            child: Text('Welcome in Flutter Structure'),
+          ),
+        ),
+        Expanded(
+          child: Container(
+            color: Colors.red,
+          ),
+        ),
+        Expanded(
+          child: Container(
+            color: Colors.blue,
+          ),
+        ),
+        Expanded(
+          child: Container(
+            color: Colors.yellow,
+          ),
+        ),
+      ]),
     );
   }
 }

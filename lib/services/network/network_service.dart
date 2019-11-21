@@ -2,7 +2,8 @@
 import 'package:flutter/material.dart';
 
 class NetworkService {
-  NetworkService({@required this.url});
-
   final String url; // url of the remote endpoint
+  final String authToken; // token used for secured service
+
+  NetworkService({@required this.url, this.authToken});
 }

@@ -7,9 +7,14 @@ class TestService extends NetworkService {
   TestService() : super(url: 'https://jsonplaceholder.typicode.com/todos/1');
 
   Future tryAsync() async {
-    Response result = await get(super.url);
-    var t =  jsonDecode(result.body); // decode used to parse JSON response to dart object
-    print(t);
+    Response result = await get(
+      super.url,
+      headers: {
+        'Authorization': super.authToken,
+      },
+    );
+    var t = jsonDecode(
+        result.body); // decode used to parse JSON response to dart object
     return 'ok';
   }
 }
