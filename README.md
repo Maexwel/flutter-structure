@@ -3,9 +3,11 @@
 The goal of this project is to provide à High-level and customizable structure of Flutter app.
 Here are the main principles bootstraped :
 * Widget structure
-* Stae Management structure and configuration
+* State Management structure and configuration
 * Routing structure
 * Remote service configuration (http)
+
+Note: DO NOT CLONE THIS REPO, COPY WHAT YOU NEED !
 
 ## Table of content
 
