@@ -7,7 +7,7 @@ Here are the main principles bootstraped :
 * Routing structure
 * Remote service configuration (http)
 
-Note: DO NOT CLONE THIS REPO, COPY WHAT YOU NEED !
+Note: **DO NOT CLONE THIS REPO, COPY WHAT YOU NEED !**
 
 ## Table of content
 
